@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <script src="Index.html/scripts/main.js"></script>
+  <script src="Index.html/scripts/react.js"></script>
+  <title>June</title>
+
+        <script>
+            function myFunction() {
+            alert("Message Sent");
+          }
+        </script>
+
+    <style>
+         p {
+          font-family: 'Coiny', cursive;
+        }
+
+        h3, h1 {
+          font-family: 'Indie Flower', cursive;
+        }
+        body {
+            margin: 0px;
+        }
+
+        .text {
+            display: column;
+            float: center;
+            justify-content: left;
+            padding-top: 40px;
+            margin-top: 40px;
+            font-size: 1em;
+        }
+
+        .bg {
+            border: 5px none gray;
+            background-color: rgb(92, 187, 219);
+            width: 30%;
+            height: auto;
+        }
+
+        .picture {
+            display: flex;
+            float: center;
+            justify-content: center;
+        }
+
+        .font {
+            display: flex;
+            float: left;
+            justify-content: center;
+            font-size: 4em;
+            color: blue;
+        }
+
+        .img1 {
+            display: flex;
+            float: left;
+        }
+
+        .navbar {
+            background: #cea135;
+        }
+        .navbar div {
+            display: none;
+        }
+        .navbar .toggle,
+        .navbar .brand {
+            display: inline-block;
+        }
+        .navbar .link {
+            display: block;
+            text-align: center;
+            padding: 1em;
+            text-decoration: none;
+            background: #1619c2a6;
+            color: white;
+        }
+        .navbar .link:hover,
+        .navbar .link:active {
+            color: #bf70d3d7;
+            background: white;
+        }
+        .navbar .brand {
+            width: 10em;
+            text-align: center;
+            padding: 1em;
+            color: white;
+        }
+        .navbar a {
+            text-decoration: none;
+        }
+        .navbar .toggle {
+            padding: 1em;
+            color: black;
+        }
+
+        * {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+        @media (min-width: 48em) {
+            .navbar {
+                display: flex;
+            }
+            .navbar .left,
+            .navbar .right {
+                display: flex;
+                flex: 1;
+            }
+            .navbar .link {
+                width: auto;
+            }
+            .navbar .right {
+                justify-content: flex-end;
+            }
+            .navbar .toggle {
+                display: none;
+            }
+        }
+        @media (min-width: 48em) {
+            .navbar div {
+                display: flex;
+            }
+        }
+        @media (max-width: 48em) {
+            .navbar.active .toggle {
+                background: #52ddd2b6;
+                color: white;
+            }
+            .navbar .brand {
+                text-align: left;
+            }
+            .navbar.active div {
+                display: block;
+            }
+        }
+          /* li {
+    font-family: 'Laila', serif;
+  } */
+
+  li {
+    font-family: 'Coiny', cursive;
+  }
+
+  h3, h4, h1 {
+    display: flex;
+    font-family: 'Indie Flower', cursive;
+    justify-content: center;
+  }
+
+  .special {
+      display: flex;
+      justify-content: center;
+    }
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 45px;
+    }
+
+  nav {
+    padding: 50px 0;
+    min-width: 500px; 
+    }
+    nav ul {
+    background: linear-gradient(110deg, 
+        rgba(88, 33, 33, 0) 0%, 
+        rgba(255, 255, 255, 0.2) 25%, 
+        rgba(73, 36, 36, 0.2) 75%, 
+        rgba(53, 25, 25, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+    }
+    nav ul li {
+    display: inline-block;
+    /* display: flex; */
+    /* float: center; */
+    justify-content: center;
+    }
+    nav ul li a {
+    display: flex;
+    justify-content: center;
+    padding: 10px; 
+    color: black;
+    font-size: 18px;
+    font-family: Arial;
+    text-decoration: none;
+    text-shadow: 4px 2px 3px;
+    /* display: block; */
+    }
+
+    nav ul li a :hover {
+        transition-duration: 0.2s;
+    }
+
+    .infoBlock {
+      margin-top: 32px;
+      box-shadow: 9px 11px 20px rgb(201, 199, 94);
+    }
+
+    footer {
+      height: 110px;
+      width: 100%;
+      background-color: gray;
+      display: flex;
+      justify-content: center;
+      margin-top: 115px;
+    }
+
+    .footer-content {
+      display: inline-flex;
+      float: left;
+    }
+
+    .copyright {
+      display: flex;
+      float: left;
+      margin-top: 35px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div>
+      <div>
+        <h1>The Art Next Door</h1>
+      </div>
+    </div>
+    <!-- nav-links -->
+    <nav>
+        <ul>
+          <li>
+            <span class="special"><a href="index.html">Home</a><i class="fas fa-home"></i></span>
+          </li>
+          <li>
+            <span class="special"><a href="browse.html">Browse</a><i class="far fa-folder-open"></i></span>
+          </li>
+          <li>
+            <span class="special"><a href="contact.html">Contact</a><i class="fas fa-phone"></i></span>
+          </li>
+          <li>
+            <span class="special"><a href="about.html">About</a><i class="fas fa-users"></i></span>
+          </li>
+        </ul>
+      </nav>
+    <!-- content here -->
+    <div>
+      Schedule & Hours of Operation
+
+<div class="month">
+  <ul>
+    <a href="may.html"><li class="prev">&#10094;</li></a>
+    <a href="about.html"><li class="next">&#10095;</li></a>
+    <li>
+      June<br>
+      <span style="font-size:18px">2019</span>
+    </li>
+  </ul>
+</div>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active">10</span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+
+<div class="infoBlock">
+  <form action="#" method="post">
+      Name <input type="text" placeholder="First name"/>
+      <input type="text" placeholder="Last name"/><br>
+      Email <input type="text"/><br>
+      Message <input type="textarea"/><br>
+      <div class="line">
+          <button onclick="myFunction()">submit</button>
+          <a href="index.html"><input type="button" name="button" value="Return Home"/></a>
+      </div>
+  </form>
+</div>
+
+<div id="footer-img">
+    <footer>
+      <div class="special">
+        <!-- <h3>The Art Next Door</h3> -->
+        <div class="copyright">&copy; Copyright 2019 "The Art Next Door"</div>
+        <div>
+          <p class="icon"><i class="fab fa-facebook-f"></i></p>
+        </div>
+        <div>
+            <p class="icon"><i class="fab fa-linkedin-in"></i></p>
+        </div>
+        <div>
+            <p class="icon"><i class="fab fa-twitter"></i></p>
+        </div>
+      </div>
+    </footer>
+</div>
+
+</body>
+
+<script>
+    const navHamburger = document.querySelector('#navHamburger');
+    navHamburger.addEventListener('click', (e) => {
+    navHamburger.parentElement.classList.toggle('active');
+    })
+</script>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <script src="Index.html/scripts/main.js"></script>
+  <script src="Index.html/scripts/react.js"></script>
+  <title>Art Galleria</title>
+
+  <script>
+    function myFunction() {
+    alert("Message Sent");
+  }
+  </script>
+
+  <style>
+  
+  li {
+    font-family: 'Laila', serif;
+  }
+
+  p {
+    font-family: 'Coiny', cursive;
+  }
+
+  h3, h4, h1 {
+    display: flex;
+    font-family: 'Indie Flower', cursive;
+    justify-content: center;
+  }
+
+  .special {
+      display: flex;
+      justify-content: center;
+    }
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 45px;
+    }
+
+  nav {
+    padding: 50px 0;
+    min-width: 500px; 
+    }
+    nav ul {
+    background: linear-gradient(110deg, 
+        rgba(88, 33, 33, 0) 0%, 
+        rgba(255, 255, 255, 0.2) 25%, 
+        rgba(73, 36, 36, 0.2) 75%, 
+        rgba(53, 25, 25, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+    }
+    nav ul li {
+    display: inline-block;
+    /* display: flex; */
+    /* float: center; */
+    justify-content: center;
+    }
+    nav ul li a {
+    display: flex;
+    justify-content: center;
+    padding: 10px; 
+    color: black;
+    font-size: 18px;
+    font-family: Arial;
+    text-decoration: none;
+    text-shadow: 4px 2px 3px;
+    /* display: block; */
+    }
+
+    nav ul li a :hover {
+        transition-duration: 0.2s;
+    }
+
+    .contact-font {
+      justify-content: center;
+      color: goldenrod;
+      margin-top: 12px;
+      box-shadow: 9px 10px 5px rgb(139, 84, 84);
+      width: 173px;
+    }
+
+    .contact-font-B {
+      justify-content: center;
+      color: goldenrod;
+      margin-top: 12px;
+      box-shadow: 9px 11px 8px rgb(139, 84, 84);
+      width: 417px;
+    }
+
+    .contact-font-A {
+      justify-content: center;
+      color: goldenrod;
+      margin-top: 12px;
+      box-shadow: 9px 7px 8px rgb(139, 84, 84);
+      width: 49px;
+    }
+
+    footer {
+      height: 110px;
+      width: 100%;
+      background-color: gray;
+      display: flex;
+      justify-content: center;
+      margin-top: 115px;
+    }
+
+    .footer-content {
+      display: inline-flex;
+      float: left;
+    }
+
+    .copyright {
+      display: flex;
+      float: left;
+      margin-top: 35px;
+    }
+
+  </style>
+
+</head>
+<!-- picture or logo -->
+<body>
+  <!-- header -->
+  <div>
+    <div>
+      <h1>The Art Next Door</h1>
+    </div>
+  </div>
+  <!-- nav-links -->
+  <nav>
+    <ul>
+      <li>
+        <span class="special"><a href="index.html">Home</a><i class="fas fa-home"></i></span>
+      </li>
+      <li>
+        <span class="special"><a href="browse.html">Browse</a><i class="far fa-folder-open"></i></span>
+      </li>
+      <li>
+        <span class="special"><a href="contact.html">Contact</a><i class="fas fa-phone"></i></span>
+      </li>
+      <li>
+        <span class="special"><a href="about.html">About</a><i class="fas fa-users"></i></span>
+      </li>
+    </ul>
+  </nav>
+  <!-- content here -->
+  <div>
+    <h2>Contact Us</h2>
+    <div>
+        <div class="contact-font">
+            NAME:<input type="text">
+        </div>
+        <div class="contact-font">
+            PHONE:<input type="text">
+        </div>
+        <div class="contact-font">
+            EMAIL:<input type="email">
+        </div>
+        <div class="contact-font-B">
+            SUBJ:<textarea rows="9" cols="50"></textarea>
+        </div>
+        <div class="contact-font-A">
+            <button onclick="myFunction()"><a href="index.html"><input type="submit" value="send!"></a></button><br>
+            
+            <script>
+                function myFunction() {
+                alert("Message Sent");
+              }
+            </script>
+        </div>
+        
+    </div>
+  </div>
+  <div>
+    
+  </div>
+</body>
+<!-- footer here -->
+<div id="footer-img">
+    <footer>
+      <div class="special">
+        <!-- <h3>The Art Next Door</h3> -->
+        <div class="copyright">&copy; Copyright 2019 "The Art Next Door"</div>
+        <div>
+          <p class="icon"><i class="fab fa-facebook-f"></i></p>
+        </div>
+        <div>
+            <p class="icon"><i class="fab fa-linkedin-in"></i></p>
+        </div>
+        <div>
+            <p class="icon"><i class="fab fa-twitter"></i></p>
+        </div>
+      </div>
+    </footer>
+</div>
+</html>
